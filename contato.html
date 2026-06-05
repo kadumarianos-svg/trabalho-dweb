@@ -32,7 +32,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contato.html">CONTATO</a>
-              </li>w
+              </li>
             </ul>
         </div>
       </nav>
@@ -42,10 +42,45 @@
         <p>Para entrar em contato conosco preencha o formulário abaixo:</p>
         <form action="contato.php" method="POST">
             <label for="">Nome</label><br>
-            <input type="text" id="nome" name="nome" required><br><br>
+            <input type="text" id="nome" name="nome" value="Seu nome" required><br><br>
             
             <label for="">E-mail</label><br>
             <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone"><br><br>
+
+            <label for="estado">Estado:</label><br>
+            <select id="estado" name="estado">
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select><br><br>
 
             <label for="">Mensagem:</label> <br>
             <textarea name="mensagem" id="mensagem" required></textarea>
