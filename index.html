@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página Inicial</title>
     <link rel="stylesheet" href="style.css"/> 
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">SCCP</a>
+          <a class="navbar-brand" href="#" >SCCP
+             <img src="https://i.pinimg.com/474x/9c/88/16/9c88169eb760b6997a465f216d7a9892.jpg"
+         alt="Corinthians"
+         width="20">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -34,12 +38,58 @@
                 <a class="nav-link" href="contato.html">CONTATO</a>
               </li>
             </ul>
+            
+            
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/corinthians/" target="_blank">
+                  <img src="https://static.corinthians.com.br/files/assets/svg/instagram.svg" alt="Instagram" width="25">
+                </a>        
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/corinthians" target="_blank">
+                  <img src="https://static.corinthians.com.br/img/twitter-x-v2.svg" alt="Twitter" width="25">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/corinthians" target="_blank">
+                  <img src="https://static.corinthians.com.br/files/assets/svg/facebook.svg" alt="Facebook" width="25">
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="https://whatsapp.com/channel/0029VaCskai4SpkH0Ja2ss2E" target="_blank">
+                  <img src="https://static.corinthians.com.br/img/whatsapp_icone.png" alt="WhatsApp" width="25">
+                </a>
+              </li> 
+            </ul>
+            <span class="navbar-text">
+              Siga-nos nas redes sociais!
+            </span>
           </div>
         </div>
       </nav>
     </header>
-    <main>
-        <img src="./img" class="img-fluid" alt="Corinthians">
+    <main><div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.pinimg.com/originals/da/da/e7/dadae7d64177b44b1c7fa580021b2326.jpg" class="d-block w-100" width="100%" alt="carrossel1">
+    </div>
+    <div class="carousel-item">
+      <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/05/corinthians-campanha-lgbt-1-e1684345850421.png?w=1080&h=607&crop=1" class="d-block w-100" alt="carrossel2">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/1b/21/f0/1b21f0b186465dcf363440dc62809749.jpg" class="d-block w-100" alt="carrossel3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
         <h1></h1>
         <h2></h2>
         <p></p>
@@ -49,10 +99,10 @@
         <p></p>
     </main>
     <footer>
-        <h3>Desenvolvido por:</h3>
-        <h4>Carlos Eduardo</h4>
-        <h4>Gustavo Soares</h4>
-        <h4>Julio Arthur</h4>
+        <h3 class="titulo_footer">Desenvolvido por:</h3>
+        <h4 class="nome_footer">Carlos Eduardo</h4>
+        <h4 class="nome_footer">Gustavo Soares</h4>
+        <h4 class="nome_footer">Julio Arthur</h4>
     </footer>
 </body>
 </html>

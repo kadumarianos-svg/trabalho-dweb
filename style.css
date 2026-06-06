@@ -1,4 +1,50 @@
-.container-fluid {
-background-image: url("\imagens corinthians\imgcorinthians.png");
-background-color: black opacity(20%);
+.navbar{
+    background-color: black !important;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    margin: 0;
+    padding: 0;
+    background-color: black !important;
+}
+.carousel-item{
+    background-color: black;
+}
+
+.carousel-item img{
+    width: 150%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.navbar-brand{
+    font-family: "Marker Felt", fantasy;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.contato{
+    background-color: black;
+}
+table{
+    width: 70%;
+    margin: 0;
+    text-align: center;
+    
+}
+
+th{
+    background-color: black;
+    text-align: justify;
+    color: white;
+}
+
+th, td{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
 }
