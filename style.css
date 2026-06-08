@@ -48,3 +48,22 @@ th, td{
     padding: 10px;
     text-align: center;
 }
+.col-12{
+    text-align: right;
+}
+.ifsp{
+    text-align: justify;
+    width: 10%;
+    height: 10%;
+}
+.titulo_footer{
+    background-color: black;
+    color: white;
+}
+.rounded{
+    width: 35%;
+    height: 30%;
+}
+footer{
+    text-align: center;
+}

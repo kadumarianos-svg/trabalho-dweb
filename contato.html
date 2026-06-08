@@ -76,20 +76,37 @@
     </header>
     <main>
         <h1>Contato</h1>
-        <p>Para entrar em contato conosco preencha o formulário abaixo:</p>
+
+      <h6>CT Joaquim Grava</h6>
+      <p>Rua Arlindo Bettio, 502 Altura da saída 17 Rodovia Ayrton Senna (Trabalhadores) — CEP: 03828-000</p>
+      <h6>Neo Química Arena </h6>
+      <p>Avenida Miguel Ignácio Curi, 111 Vila Carmosina — CEP: 08295-005</p>
+      <h6>Sport Club Corinthians Paulista</h6>
+      <p>Rua: São Jorge, 777 Caixa Postal: 15710 Bairro: Tatuapé — CEP: 03087-000 PABX: (11) 2095-3000</p> <hr>
+
+        <h6>Preencha o formulário abaixo e contate-nos a partir de nosso email:</h6>
         <form action="contato.php" method="POST">
-            <label for="">Nome</label><br>
-            <input type="text" id="nome" name="nome" required><br><br>
-
-            <label for="">E-mail</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="telefone">Telefone:</label><br>
-            <input type="tel" id="telefone" name="telefone"><br><br>
-
-            <label for="estado">Estado:</label><br>
-            <select id="estado" name="estado">
-                <option value="">Selecione um estado</option>
+          <form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label"><u>Nome</u></label>
+    <input type="name" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label"><u>E-mail</u></label>
+    <input type="email" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-11">
+    <label for="inputAddress" class="form-label"><u>Telefone</u></label>
+    <input type="tel" class="form-control" id="inputAddress">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label"><u>Cidade</u></label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label"><u>Estado</u></label>
+    <select id="inputState" class="form-select">
+     <option value="">Selecione um estado</option>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapá</option>
@@ -117,21 +134,35 @@
                 <option value="SP">São Paulo</option>
                 <option value="SE">Sergipe</option>
                 <option value="TO">Tocantins</option>
-            </select><br><br>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label"><u>Mensagem</u></label><br>
+  <textarea></textarea>  
+</div>
+  <div class="col-12">
+  </div><br>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Enviar</button>
+     <button type="reset'" class="btn btn-primary">Apagar Tudo</button>
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck";>
+        Lembre-se de mim
+      </label>
+  </div><br>    <br>
+    <br>
+    <br>
+    <br>
 
-            <label for="">Mensagem:</label> <br>
-            <textarea name="mensagem" id="mensagem" required></textarea>
-            <br><br>
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
-        </form>
-        <br>
     </main>
-    <footer>
-        <h3 class="titulo_footer">Desenvolvido por:</h3>
-        <h4 class="nome_footer">Carlos Eduardo</h4>
-        <h4 class="nome_footer">Gustavo Soares</h4>
-        <h4 class="nome_footer">Julio Arthur</h4>
+     <footer>
+        <h5 class="titulo_footer">Desenvolvido pelo Grupo de Alunos da Turma ADS 171: </h5>
+        <h6 class="nome_footer">Carlos Eduardo Mariano da Silva</h6>
+        <h6 class="nome_footer">Gustavo Soares</h6>
+        <h6 class="nome_footer">Julio Arthur</h6>
+        <div class="logo">
+  <img src="https://www.cubatao.sp.gov.br/wp-content/uploads/2023/05/Fotos-postar-site-2023-05-12T100245.158.png" class="ifsp" alt="Logo ifsp">
+</div>
     </footer>
 </body>
 
