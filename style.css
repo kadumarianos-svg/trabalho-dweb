@@ -92,6 +92,15 @@ body{
     margin: 0;
     padding: 0;
     background-color: black !important;
+    align-items: center;
+}
+.navbar-nav .nav-link{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.nav-item{
+    color: white;
 }
 .carousel-item{
     background-color: black;
@@ -150,3 +159,29 @@ footer{
     background-color: black;
     color: white;
 }
+.dropdown-item:hover{
+    background-color: #333;
+    color: white;
+}
+.elencom{
+    height: 500px;
+    background-image:  linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url(https://soutimao.com.br/wp-content/uploads/2022/04/eLENCO-coRINTHIANS.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.elencom h1{
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px black;
+}
+
