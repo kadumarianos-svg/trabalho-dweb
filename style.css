@@ -50,7 +50,6 @@ body {
     text-decoration: none;
 }
 
-/* Carrossel preenchendo o espaço restante */
 .carousel {
     margin: 0;
     padding: 0;
@@ -73,7 +72,6 @@ body {
     object-fit: cover;
 }
 
-/* Rodapé fixo no final da tela */
 footer {
     background: #000;
     color: #fff;
