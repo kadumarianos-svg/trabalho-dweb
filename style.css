@@ -164,11 +164,16 @@ footer{
     color: white;
 }
 .elencom{
+     font-size: x-large;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
     height: 500px;
     background-image:  linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-    url(https://soutimao.com.br/wp-content/uploads/2022/04/eLENCO-coRINTHIANS.jpg);
+    url(https://cdn.meutimao.com.br/fotos-do-corinthians/w614/2025/12/14/elenco_do_corinthians_comemorando_avanco_para_a_ngg9.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center 50%;
     height: 300px;
 
     display: flex;
@@ -184,4 +189,29 @@ footer{
     font-size: 4rem;
     text-shadow: 2px 2px 8px black;
 }
+.elencof{
+    font-size: x-large;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+    height: 500px;
+    background-image:  linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url(https://vermelho.org.br/wp-content/uploads/2023/04/Corinthians.jpg);
+    background-size: cover;
+    background-position: center 50%;
+    height: 300px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.elencof h1{
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px black;
+}
