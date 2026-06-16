@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4 !important;
+  font-family: 'Barlow', sans-serif !important;
+  color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #000 !important;
+  min-height: 68px;
+  border-bottom: 3px solid #fff;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #fff !important;
+}
+
+.nav-link,
+.navbar-text {
+  color: #dcdcdc !important;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+  color: #fff !important;
+}
+
+.dropdown-menu {
+  background: #000 !important;
+  border: 1px solid #333 !important;
+}
+
+.dropdown-item {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+/* HERO */
+.elencom {
+  background: linear-gradient(90deg, #000, #1c1c1c);
+  color: #fff;
+  padding: 80px 8%;
+  margin-bottom: 40px;
+  border-bottom: 4px solid #fff;
+}
+
+.elencom h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0;
+}
+
+/* TÍTULOS DAS POSIÇÕES */
+h4 {
+  max-width: 1180px;
+  margin: 50px auto 25px !important;
+  padding: 14px 22px;
+  background: #000;
+  color: #fff !important;
+  font-size: 1.7rem !important;
+  font-weight: 900 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+/* CARDS */
+.card {
+  display: inline-block !important;
+  vertical-align: top;
+  width: 18rem !important;
+  margin: 15px;
+  border: none !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+  background: #fff !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,.14);
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.22);
+}
+
+.card-img-top {
+  background: linear-gradient(180deg, #e8e8e8, #fff);
+  height: 300px;
+  object-fit: contain;
+  padding: 18px;
+}
+
+.card-body {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 18px !important;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.list-group-item {
+  font-size: .95rem;
+  font-weight: 700;
+  color: #222 !important;
+  border-color: #e5e5e5 !important;
+}
+
+/* CENTRALIZAR ÁREA DOS CARDS */
+body > .card,
+header ~ .card {
+  margin-left: calc((100% - 1180px) / 2);
+}
+
+/* FOOTER, CASO ADICIONE */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 45px 20px;
+  margin-top: 60px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .elencom {
+    padding: 55px 25px;
+  }
+
+  h4 {
+    margin: 35px 15px 20px !important;
+    font-size: 1.4rem !important;
+  }
+
+  .card {
+    display: block !important;
+    width: calc(100% - 30px) !important;
+    margin: 15px auto !important;
+  }
+
+  .card-img-top {
+    height: 280px;
+  }
+
+  .navbar-text {
+    display: none;
+  }
+}
+
+/* HERO DA PÁGINA */
+.elenco-hero,
+.elencom {
+  background: linear-gradient(90deg, #000 0%, #151515 100%);
+  color: #fff;
+  padding: 75px 8%;
+  border-bottom: 5px solid #fff;
+  margin-bottom: 55px;
+}
+
+.elenco-hero span,
+.elencom span {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #dcdcdc;
+  margin-bottom: 12px;
+}
+
+.elenco-hero h1,
+.elencom h1 {
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.95;
+  margin: 0 0 18px;
+  letter-spacing: -2px;
+}
+
+.elenco-hero p,
+.elencom p {
+  max-width: 720px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #e5e5e5;
+  margin: 0;
+}
+
+/* CASO O TEXTO ESTEJA FORA DA SECTION */
+header + main > span,
+main > span {
+  display: block;
+  max-width: 1180px;
+  margin: 50px auto 10px;
+  padding: 0 20px;
+  font-size: .9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #555;
+}
+
+main > h1 {
+  max-width: 1180px;
+  margin: 0 auto 18px;
+  padding: 0 20px;
+  font-size: clamp(3.2rem, 7vw, 6rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  color: #000;
+}
+
+main > p {
+  max-width: 1180px;
+  margin: 0 auto 45px;
+  padding: 0 20px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* TÍTULOS DAS POSIÇÕES */
+.posicao h2,
+.posicao h4,
+main h4 {
+  max-width: 1180px;
+  margin: 65px auto 28px !important;
+  padding: 16px 24px;
+  background: #000;
+  color: #fff !important;
+  font-size: clamp(1.7rem, 3vw, 2.4rem) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-left: 8px solid #080101;
+  border-radius: 4px;
+  position: relative;
+}
+
+.posicao h2::after,
+.posicao h4::after,
+main h4::after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  bottom: -10px;
+  width: 90px;
+  height: 5px;
+  background: #000;
+}
+
+/* GRID DOS CARDS */
+.cards-elenco {
+  max-width: 1180px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+.hero-elenco {
+    background: linear-gradient(
+        90deg,
+        #000000 0%,
+        #0f0f0f 50%,
+        #1a1a1a 100%
+    );
+
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+
+    padding: 80px;
+    margin-bottom: 60px;
+
+    border-bottom: 4px solid #fff;
+}
+
+.hero-conteudo {
+    max-width: 700px;
+}
+
+.categoria {
+    display: inline-block;
+
+    color: #d1d1d1;
+
+    font-size: .85rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.hero-elenco h1 {
+    color: white;
+
+    font-size: clamp(3.5rem, 8vw, 6rem);
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    line-height: .95;
+
+    margin-bottom: 20px;
+
+    letter-spacing: -3px;
+}
+
+.hero-elenco p {
+    color: #e5e5e5;
+
+    font-size: 1.3rem;
+
+    line-height: 1.8;
+
+    max-width: 650px;
+}

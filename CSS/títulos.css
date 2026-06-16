@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4 !important;
+  font-family: 'Barlow', sans-serif !important;
+  color: #111;
+}
+
+.navbar {
+  background: #000 !important;
+  min-height: 68px;
+  border-bottom: 3px solid #fff;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #fff !important;
+}
+
+.nav-link,
+.navbar-text {
+  color: #dcdcdc !important;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+  color: #fff !important;
+}
+
+.dropdown-menu {
+  background: #000 !important;
+  border: 1px solid #333 !important;
+}
+
+.dropdown-item {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.dropdown-item {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+/* CONTEÚDO */
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 50px 22px 80px;
+}
+
+main h1 {
+  background: #000;
+  color: #fff;
+  font-size: clamp(2.6rem, 6vw, 5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 45px 35px;
+  margin-bottom: 35px;
+  border-radius: 4px;
+}
+
+main > p:first-of-type {
+  background: #fff;
+  border-left: 8px solid #000;
+  padding: 28px 32px;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  font-weight: 500;
+  box-shadow: 0 4px 18px rgba(0,0,0,.08);
+}
+
+/* TABELA */
+table {
+  width: 100%;
+  background: #fff;
+  border-collapse: collapse;
+  margin: 25px 0 50px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.08);
+}
+
+th {
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 18px;
+}
+
+td {
+  padding: 16px 18px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+td:last-child {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+/* SEÇÕES DOS TÍTULOS */
+main h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 65px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 4px solid #000;
+}
+
+main h2 + p {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  font-weight: 800;
+  border-radius: 3px;
+  margin-bottom: 22px;
+}
+
+main p {
+  font-size: 1.15rem;
+  line-height: 1.85;
+  color: #333;
+  text-align: justify;
+}
+
+/* IMAGENS */
+.figure {
+  width: 100%;
+  margin: 20px 0 25px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.08);
+}
+
+.figure img {
+  width: 100% !important;
+  max-height: 430px;
+  object-fit: cover;
+  border-radius: 4px;
+  filter: grayscale(15%);
+}
+
+.figure-caption {
+  margin-top: 10px;
+  font-size: .95rem;
+  color: #666 !important;
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 45px 20px 35px;
+  border-top: 3px solid #fff;
+}
+
+.titulo_footer {
+  font-size: 1.35rem;
+  font-weight: 900;
+}
+
+.nome_footer {
+  color: #dcdcdc;
+  font-weight: 500;
+}
+
+.ifsp {
+  max-width: 300px;
+  width: 100%;
+  height: auto !important;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  main {
+    padding: 30px 14px 50px;
+  }
+
+  main h1 {
+    padding: 32px 22px;
+  }
+
+  main > p:first-of-type {
+    padding: 22px;
+    font-size: 1.1rem;
+  }
+
+  main p {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  table {
+    font-size: .9rem;
+  }
+
+  th,
+  td {
+    padding: 12px;
+  }
+
+  .navbar-text {
+    display: none;
+  }
+}

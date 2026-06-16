@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f3f3 !important;
+  color: #1f1f1f;
+  font-family: 'Barlow', sans-serif !important;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #000 !important;
+  min-height: 66px;
+  border-bottom: 3px solid #fff;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+
+.navbar-brand img {
+  margin-left: 6px;
+  border-radius: 50%;
+}
+
+.nav-link,
+.navbar-text {
+  color: #d6d6d6 !important;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+  color: #fff !important;
+}
+
+.dropdown-menu {
+  background: #000 !important;
+  border: 1px solid #333 !important;
+}
+
+.dropdown-item {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+/* FUNDO DA PÁGINA */
+main {
+  background: #f3f3f3;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 45px 22px 70px;
+}
+
+/* CABEÇALHO TIPO MATÉRIA ESPORTIVA */
+main h1 {
+  background: #000;
+  color: #fff;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 45px 35px;
+  margin: 0 0 35px;
+  border-radius: 4px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+main > p:first-of-type {
+  font-size: 1.45rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #333;
+  background: #fff;
+  border-left: 8px solid #000;
+  padding: 28px 32px;
+  margin-bottom: 42px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.08);
+}
+
+/* CONTEÚDO ESTILO GE + CORINTHIANS */
+main h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: #111;
+  line-height: 1.1;
+  margin-top: 55px;
+  margin-bottom: 22px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #000;
+}
+
+main h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 45px;
+  color: #000;
+}
+
+main h4 {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+}
+
+main p {
+  background: #fff;
+  color: #333;
+  font-size: 1.15rem;
+  line-height: 1.85;
+  text-align: justify;
+  padding: 18px 24px;
+  margin: 0 0 14px;
+  border-radius: 3px;
+}
+
+/* DESTAQUES AUTOMÁTICOS */
+main p:nth-of-type(8n) {
+  border-left: 6px solid #000;
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 45px 20px 35px;
+  border-top: 3px solid #fff;
+}
+
+.titulo_footer {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.nome_footer {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #dcdcdc;
+}
+
+.ifsp {
+  max-width: 300px;
+  width: 100%;
+  height: auto !important;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  main {
+    padding: 28px 14px 45px;
+  }
+
+  main h1 {
+    padding: 32px 22px;
+  }
+
+  main h2 {
+    font-size: 1.8rem;
+  }
+
+  main p {
+    font-size: 1rem;
+    text-align: left;
+    padding: 16px 18px;
+  }
+
+  main > p:first-of-type {
+    font-size: 1.15rem;
+    padding: 22px;
+  }
+
+  .navbar-text {
+    display: none;
+  }
+}
