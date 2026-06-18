@@ -1,4 +1,7 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -11,13 +14,45 @@ body {
     font-family: 'Barlow', sans-serif;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar fixa no topo */
 .navbar {
     background: #000 !important;
-    height: 55px;
-    flex-shrink: 0;
+    min-height: 68px;
+    border-bottom: 3px solid #fff;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #fff !important;
+}
+
+.nav-link,
+.navbar-text {
+    color: #dcdcdc !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+    color: #fff !important;
+    background-color: #333;
+}
+
+.dropdown-menu {
+    background: #000 !important;
+    border: 1px solid #333 !important;
+}
+
+.dropdown-item {
+    color: #fff !important;
+    font-weight: 700;
 }
 
 /* Hero menor */
@@ -80,124 +115,90 @@ footer {
     flex-shrink: 0;
     font-family: 'Barlow', sans-serif;
 }
-.navbar{
-    background-color: black !important;
-}
-body{
-    margin: 0;
-    padding: 0;
+
+.titulo_footer {
+    font-size: 1.35rem;
+    font-weight: 900;
 }
 
-.navbar{
-    margin: 0;
-    padding: 0;
-    background-color: black !important;
-    align-items: center;
-}
-.navbar-nav .nav-link{
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-.nav-item{
-    color: white;
-}
-.carousel-item{
+.carousel-item {
     background-color: black;
 }
 
-.carousel-item img{
+.carousel-item img {
     width: 150%;
     height: 250px;
     object-fit: cover;
 }
 
-.navbar-brand{
-    font-family: "Marker Felt", fantasy;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-}
-.contato{
+.contato {
     background-color: black;
 }
-table{
+
+table {
     width: 70%;
     margin: 0;
     text-align: center;
-    
+
 }
 
-th{
+th {
     background-color: black;
     text-align: justify;
     color: white;
 }
 
-th, td{
+th, td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
 }
-.col-12{
+
+.col-12 {
     text-align: right;
 }
-.ifsp{
+
+.ifsp {
     text-align: justify;
-    
 }
-.titulo_footer{
-    background-color: black;
-    color: white;
-}
-.rounded{
+
+.rounded {
     width: 35%;
     height: 30%;
 }
-footer{
-    text-align: center;
-    background-color: black;
-    color: white;
-}
-.dropdown-item:hover{
-    background-color: #333;
-    color: white;
-}
-.elencom{
-     font-size: x-large;
-     font-family: 'Montserrat', sans-serif;
-     font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: -0.02em;
-    height: 500px;
-    background-image:  linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-    url(https://cdn.meutimao.com.br/fotos-do-corinthians/w614/2025/12/14/elenco_do_corinthians_comemorando_avanco_para_a_ngg9.jpg);
-    background-size: cover;
-    background-position: center 50%;
-    height: 300px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-    text-align: center;
-}
-
-.elencom h1{
-    font-size: 4rem;
-    text-shadow: 2px 2px 8px black;
-}
-.elencof{
+.elencom {
     font-size: x-large;
-     font-family: 'Montserrat', sans-serif;
-     font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: -0.02em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
     height: 500px;
-    background-image:  linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-    url(https://vermelho.org.br/wp-content/uploads/2023/04/Corinthians.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(https://cdn.meutimao.com.br/fotos-do-corinthians/w614/2025/12/14/elenco_do_corinthians_comemorando_avanco_para_a_ngg9.jpg);
+    background-size: cover;
+    background-position: center 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.elencom h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px black;
+}
+
+.elencof {
+    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(https://vermelho.org.br/wp-content/uploads/2023/04/Corinthians.jpg);
     background-size: cover;
     background-position: center 50%;
     height: 300px;
@@ -211,8 +212,38 @@ footer{
     text-align: center;
 }
 
-.elencof h1{
+.elencof h1 {
     font-size: 4rem;
     text-shadow: 2px 2px 8px black;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.btn-topo {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    border: 2px solid #fff;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .3);
+    transition: all .3s ease;
+    z-index: 999;
+}
+
+.btn-topo:hover {
+    background: #ff0000;
+    color: #fff;
+    transform: translateY(-5px);
+}

@@ -14,7 +14,7 @@ body {
 /* NAVBAR */
 .navbar {
   background: #000 !important;
-  min-height: 66px;
+  min-height: 68px;
   border-bottom: 3px solid #fff;
 }
 
@@ -22,17 +22,11 @@ body {
   font-size: 1.6rem;
   font-weight: 900;
   color: #fff !important;
-  letter-spacing: 1px;
-}
-
-.navbar-brand img {
-  margin-left: 6px;
-  border-radius: 50%;
 }
 
 .nav-link,
 .navbar-text {
-  color: #d6d6d6 !important;
+  color: #dcdcdc !important;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .5px;
@@ -41,6 +35,7 @@ body {
 .nav-link:hover,
 .dropdown-item:hover {
   color: #fff !important;
+  background-color: #333;
 }
 
 .dropdown-menu {
@@ -52,6 +47,7 @@ body {
   color: #fff !important;
   font-weight: 700;
 }
+
 
 /* FUNDO DA PÁGINA */
 main {
@@ -75,7 +71,7 @@ main h1 {
   letter-spacing: -1px;
 }
 
-main > p:first-of-type {
+main>p:first-of-type {
   font-size: 1.45rem;
   line-height: 1.6;
   font-weight: 500;
@@ -84,7 +80,7 @@ main > p:first-of-type {
   border-left: 8px solid #000;
   padding: 28px 32px;
   margin-bottom: 42px;
-  box-shadow: 0 4px 18px rgba(0,0,0,.08);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, .08);
 }
 
 /* CONTEÚDO ESTILO GE + CORINTHIANS */
@@ -183,7 +179,7 @@ footer {
     padding: 16px 18px;
   }
 
-  main > p:first-of-type {
+  main>p:first-of-type {
     font-size: 1.15rem;
     padding: 22px;
   }
@@ -191,4 +187,35 @@ footer {
   .navbar-text {
     display: none;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-topo {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  border: 2px solid #fff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .3);
+  transition: all .3s ease;
+  z-index: 999;
+}
+
+.btn-topo:hover {
+  background: #ff0000;
+  color: #fff;
+  transform: translateY(-5px);
 }
