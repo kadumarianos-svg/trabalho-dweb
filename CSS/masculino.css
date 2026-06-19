@@ -15,7 +15,6 @@ body {
 .navbar {
   background: #000 !important;
   min-height: 68px;
-  border-bottom: 3px solid #fff;
 }
 
 .navbar-brand {
@@ -239,7 +238,7 @@ footer {
   align-items: center;
   padding: 80px;
   margin-bottom: 60px;
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid #6a6060;
 }
 
 .hero-conteudo {

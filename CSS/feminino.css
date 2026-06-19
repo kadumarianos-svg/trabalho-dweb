@@ -12,6 +12,41 @@ body {
     color: #111;
 }
 
+.navbar {
+    background: #000 !important;
+    min-height: 68px;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #fff !important;
+}
+
+.nav-link,
+.navbar-text {
+    color: #dcdcdc !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+    color: #fff !important;
+    background-color: #333;
+}
+
+.dropdown-menu {
+    background: #000 !important;
+    border: 1px solid #333 !important;
+}
+
+.dropdown-item {
+    color: #fff !important;
+    font-weight: 700;
+}
+
 .hero-feminino {
     background: linear-gradient(135deg,#1b102e 0%,#2d1657 40%,#4b1f8c 100%);
     min-height: 420px;
@@ -158,42 +193,6 @@ footer {
     }
 }
 
-/* NAVBAR PADRÃO */
-.navbar {
-    background: #000 !important;
-    min-height: 68px;
-    border-bottom: 3px solid #fff;
-}
-
-.navbar-brand {
-    font-size: 1.6rem;
-    font-weight: 900;
-    color: #fff !important;
-}
-
-.nav-link,
-.navbar-text {
-    color: #dcdcdc !important;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-}
-
-.nav-link:hover,
-.dropdown-item:hover {
-    color: #fff !important;
-    background-color: #333;
-}
-
-.dropdown-menu {
-    background: #000 !important;
-    border: 1px solid #333 !important;
-}
-
-.dropdown-item {
-    color: #fff !important;
-    font-weight: 700;
-}
 
 html {
     scroll-behavior: smooth;

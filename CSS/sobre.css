@@ -11,11 +11,9 @@ body {
   font-family: 'Barlow', sans-serif !important;
 }
 
-/* NAVBAR */
 .navbar {
   background: #000 !important;
   min-height: 68px;
-  border-bottom: 3px solid #fff;
 }
 
 .navbar-brand {
@@ -54,21 +52,20 @@ main {
   background: #f3f3f3;
   max-width: 1180px;
   margin: 0 auto;
-  padding: 45px 22px 70px;
+  padding: 60px 22px;
 }
 
 /* CABEÇALHO TIPO MATÉRIA ESPORTIVA */
 main h1 {
   background: #000;
   color: #fff;
-  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-size: clamp(2.6rem, 6vw, 5rem);
   font-weight: 900;
   text-transform: uppercase;
-  padding: 45px 35px;
-  margin: 0 0 35px;
-  border-radius: 4px;
   line-height: 1;
-  letter-spacing: -1px;
+  padding: 45px 35px;
+  margin-bottom: 35px;
+  border-radius: 4px;
 }
 
 main>p:first-of-type {
@@ -124,12 +121,66 @@ main p {
   padding: 18px 24px;
   margin: 0 0 14px;
   border-radius: 3px;
+
+  transition: all .3s ease;
 }
 
-/* DESTAQUES AUTOMÁTICOS */
-main p:nth-of-type(8n) {
+main p:hover {
   border-left: 6px solid #000;
-  font-weight: 600;
+  transform: translateX(5px);
+  box-shadow: 0 4px 18px rgba(0,0,0,.12);
+  color: #000;
+}
+
+.descricao:hover {
+  border-left: none;
+  transform: none;
+  box-shadow: none;
+  color: #333;
+}
+
+details {
+  background: #fff;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+summary {
+  padding: 18px 24px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+
+  transition: .3s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "+";
+  float: right;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+details[open] summary::after {
+  content: "−";
+}
+
+summary:hover {
+  background: #f5f5f5;
+  border-left: 6px solid #000;
+}
+
+details p {
+  margin: 0;
+  border-top: 1px solid #e5e5e5;
+  border-radius: 0;
 }
 
 /* FOOTER */
